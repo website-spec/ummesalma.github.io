@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title> UMME SALMA - Make Up</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name=" UMME SALMA">
+    <link rel="icon" href="img/icons/favicon2.png" sizes="16x16">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="#">
+                <img style="width:20%;opacity:0.8;margin-left:40%;margin-right:40%;" src="img/Logo%20v1.1.png">
+            </a>
+        </header>
+        <nav>
+            <ul>
+                <div class="container">
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT UMME SALMA</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="package.html">PACKAGE</a>
+                    </li>
+                     <li>
+                        <a href="reviews.html">REVIEWS</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="carousel">
+                <img class="mySlides" src="img/placeholder.jpg" style="width:80%">
+                <img class="mySlides" src="img/placeholder2.jpg" style="width:100%">
+                <img class="mySlides" src="img/placeholder3.jpg" style="width:100%">
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="footer-left-box">
+                <p>
+                    Umme Salma MAKE UP ARTIST 
+<!--                     SALMAZ MAKEOVER
+ -->                    <br> +91 9980118729, 9916827875
+                    <br> asiyasalmaz1@gmail.com
+                    <br>
+                    <br>
+
+                    <a href="https://www.facebook.com/profile.php?id=100008097581655">
+                        <img style="width:40px" src="img/icons/facebook.png">
+                    </a>
+                    <a href="http://insragram.com">
+                        <img style="width:40px" src="img/icons/instagram.png">
+                    </a>
+                    <a href="mailto:johnappleseed@example.com">
+                        <img style="width:40px" src="img/icons/mail.png">
+                    </a>
+                </p>
+            </div>
+      
+        </div>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 5 seconds
+        }
+    </script>
+</body>
+
+</html>
